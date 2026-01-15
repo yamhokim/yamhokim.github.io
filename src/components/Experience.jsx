@@ -71,21 +71,23 @@ function Experience() {
             href={exp.website}
             target="_blank"
             rel="noopener noreferrer"
-            className="block bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-4 sm:p-6 shadow-sm relative hover:shadow-md transition-shadow cursor-pointer"
+            className="block bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow cursor-pointer"
           >
-            <span className="absolute top-4 right-4 sm:top-6 sm:right-6 text-xs sm:text-sm text-slate-500 font-mono">
-              {exp.period}
-            </span>
-            <div className="flex gap-4 sm:gap-6">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-6">
               <div className="flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 overflow-hidden rounded-lg bg-white">
                 <CompanyLogo logo={exp.logo} company={exp.company} />
               </div>
-              <div className="flex-1 min-w-0 pr-16 sm:pr-20">
-                <div className="mb-2">
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-0.5">{exp.company}</h3>
-                  <p className="text-sm sm:text-base text-slate-700">{exp.title}</p>
+              <div className="flex-1 min-w-0">
+                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1">
+                  <div className="flex-1 min-w-0">
+                    <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-0.5 break-words">{exp.company}</h3>
+                    <p className="text-sm sm:text-base text-slate-700 break-words">{exp.title}</p>
+                  </div>
+                  <span className="text-sm text-slate-500 font-mono whitespace-nowrap sm:ml-4">
+                    {exp.period}
+                  </span>
                 </div>
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
+                <p className="text-sm sm:text-base text-slate-600 leading-relaxed mt-2 break-words">
                   {exp.description}
                 </p>
               </div>
