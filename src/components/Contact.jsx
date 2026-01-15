@@ -25,7 +25,7 @@ function Contact() {
     <section id="contact" className="section-container border-t border-slate-200 pb-24">
       <h2 className="section-title">Contact Me</h2>
       <div className="max-w-2xl mx-auto">
-        <p className="text-slate-700 mb-8 leading-relaxed">
+        <p className="text-slate-700 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
           Feel free to reach out if you'd like to discuss opportunities, have a quick coffee chat, or just say hi! I'm always looking forward to meeting new people.
         </p>
         <form onSubmit={handleSubmit} className="space-y-4">

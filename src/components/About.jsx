@@ -5,14 +5,14 @@ function PhotoPlaceholder() {
   
   if (photoError) {
     return (
-      <div className="w-40 h-40 rounded-full overflow-hidden bg-slate-200 flex items-center justify-center flex-shrink-0">
+      <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden bg-slate-200 flex items-center justify-center flex-shrink-0 mx-auto md:mx-0">
         <div className="text-slate-400 text-sm">Photo</div>
       </div>
     );
   }
   
   return (
-    <div className="w-40 h-40 rounded-full overflow-hidden bg-slate-200 flex-shrink-0">
+    <div className="w-32 h-32 sm:w-40 sm:h-40 rounded-full overflow-hidden bg-slate-200 flex-shrink-0 mx-auto md:mx-0">
       <img 
         src="/calvin.png" 
         alt="Yoonho Kim"
@@ -25,7 +25,7 @@ function PhotoPlaceholder() {
 
 function About() {
   return (
-    <section id="about" className="section-container border-t border-slate-200 pt-20">
+    <section id="about" className="section-container border-t border-slate-200 pt-16 sm:pt-20">
       <h2 className="section-title">About</h2>
       <div className="max-w-3xl">
         <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start">
