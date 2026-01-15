@@ -26,7 +26,7 @@ function Contact() {
       <h2 className="section-title">Contact Me</h2>
       <div className="max-w-2xl mx-auto">
         <p className="text-slate-700 mb-6 sm:mb-8 leading-relaxed text-sm sm:text-base">
-          Feel free to reach out if you'd like to discuss opportunities, have a quick coffee chat, or just say hi! I'm always looking forward to meeting new people.
+        Thanks for stopping by! If you’d like to connect, chat about opportunities, or just talk basketball, feel free to reach out anytime.
         </p>
         <form onSubmit={handleSubmit} className="space-y-4">
           <div>
